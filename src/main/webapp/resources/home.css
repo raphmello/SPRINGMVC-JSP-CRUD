@@ -8,7 +8,7 @@ body {
   background-color: white;
   font-family: Arial;
   font-size: 16px;
-  padding: 5%;
+  padding: 25px 5% 0 5%;
 }
 
 .flexDiv {
@@ -22,7 +22,7 @@ body {
 	width: 100%;
 	display: flex;
   	flex-flow: row wrap;
-  	justify-content: center;
+  	    justify-content: flex-start;
   	align-items: center;
 }
 
@@ -59,7 +59,8 @@ body {
 
 h1 {
   padding: 60px;
-  margin: 2%;
+  margin: auto;
+  margin-bottom: 10px;
   text-align: center;
   background: #DDDDDD;
   color: black;
@@ -90,9 +91,16 @@ button {
 .fa {
 	background-color: green;
     color: white;
-    padding: 10%;
-    border-radius: 20%;
-    margin: 2%;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer; 
+    border: none;
+    text-decoration: none;
+}
+
+.fa-close {
+	background-color: red;
 }
 
 table {
@@ -102,6 +110,8 @@ table {
 th {
   background-color: #4CAF50;
   color: white;
+  padding: 5px;
+  cursor: pointer;
 }
 
 th, td {

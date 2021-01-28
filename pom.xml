@@ -109,6 +109,15 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+<dependency>
+    <groupId>javax.ws.rs</groupId>
+    <artifactId>javax.ws.rs-api</artifactId>
+    <version>2.1.1</version>
+</dependency>
+
+
 	</dependencies>
 
 	<repositories>
@@ -131,6 +140,7 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 </project>

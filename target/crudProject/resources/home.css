@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 25px 5% 0 5%;
+}
+
+.flexDiv {
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.header1 {
+	width: 100%;
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.button1:hover {background-color: #46a049;}
+
+.button2 {
+	background-color: #e7e7e7; 
+	color: black;
+}
+
+.button2:hover {background-color: #c0c0c0;}
+
+.error {
+	color: red;
+}
+
+.hidden {
+	display: none;
+}
+
+h1 {
+  padding: 60px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #DDDDDD;
+  color: black;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+form h2 {
+  color: olivedrab;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.fa {
+	background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer; 
+    border: none;
+    text-decoration: none;
+}
+
+.fa-close {
+	background-color: red;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+	text-align: center;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+

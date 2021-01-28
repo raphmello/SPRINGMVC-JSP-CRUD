@@ -75,20 +75,17 @@ function enviarForm() {
             
         </table>
         </form:form>
-        <div style="width: 100%; margin-bottom: 2%;">
-        
-        </div>
+       
         <tr>
                 <td>
                 <button class="button1" onclick="enviarForm()">Salvar</button>
-<!--                 <input disabled="true" type="submit" value="Salvar"> -->
                 </td>
                 
             </tr>
             
-            <form method="get" action="/crudProject">
-            	<button class="button1 button2" >Voltar</button>
-            </form>
+            
+            <input type="button" value="Voltar" class="button1 button2"
+                           onclick="window.location.href='/crudProject'">
             
     </div>
 </body>

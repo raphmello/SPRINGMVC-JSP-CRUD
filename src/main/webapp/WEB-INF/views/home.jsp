@@ -35,6 +35,14 @@
     function orderExame () {
     	document.getElementById('formExame').submit();
     }
+    
+    function confirmarDelete(id) {
+    	let r = confirm("Certeza que deseja deletar esse registro?");
+    	if (r == true) {
+    		window.location.href='deleteExame?id=' + id;
+    	}
+    	
+    }
     </script>
     
         <div class="flexDiv">
@@ -45,39 +53,30 @@
             	<button class="button1" >Novo Exame</button>
             </form>
    
-            <small>Ordenar por: </small>
-            
-            <button class="button1 button2" onclick="orderPaciente()" >Paciente</button>
-          	<button class="button1 button2" onclick="orderExame()" >Exame</button>
-	            
-	            <form id="formPaciente" method="get" action="/crudProject/">
-	            	<input class="hidden" name="order" value="paciente"></input>
-	            </form>
-	            <form id="formExame" method="get" action="/crudProject/">
-	            	<input class="hidden" name="order" value="exame"></input>
-	            </form>
        		</div>
            
             <table>
-                <th>No</th>
-                <th>Paciente</th>
-                <th>Exame</th>
-                <th>Data do Exame</th>
-                <th>Observação/Resultado</th>
+                <th onclick="window.location.href='/crudProject?order=id'">Id</th>
+                <th onclick="window.location.href='/crudProject?order=paciente'">Paciente</th>
+                <th onclick="window.location.href='/crudProject?order=exame'">Exame</th>
+                <th onclick="window.location.href='/crudProject?order=data_exame'">Data do Exame</th>
+                <th onclick="window.location.href='/crudProject?order=observacao_resultado'">Observação/Resultado</th>
                 <th>Ações</th>
                  
                 <c:forEach var="exame" items="${listExame}" varStatus="status">
                 <tr>
-                    <td>${status.index + 1}</td>
+                    <td>${exame.id}</td>
                     <td>${exame.paciente}</td>
                     <td>${exame.exame}</td>
                     <fmt:formatDate value="${exame.dataExame}" pattern="dd/MM/yyyy" var="myDate"/>
                     <td>${myDate}</td>
                     <td>${exame.observacaoResultado}</td>
                     <td>
-                        <a class="fa fa-edit"  href="editExame?id=${exame.id}"></a>
-                      
-                        <a class="fa fa-close" href="deleteExame?id=${exame.id}"></a>
+                    	<button class="fa fa-edit"
+                           onclick="window.location.href='editExame?id=${exame.id}'"></button>
+                    	<button class="fa fa-close"
+                           onclick="confirmarDelete(${exame.id})"></button>
+                   
                     </td>
                              
                 </tr>

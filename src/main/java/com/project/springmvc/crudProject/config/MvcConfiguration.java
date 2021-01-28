@@ -40,7 +40,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/job-crud-project?useSSL=false&serverTimezone=GMT-3");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/job-crud-project?useSSL=false&serverTimezone=GMT-3&allowPublicKeyRetrieval=true");
         dataSource.setUsername("root");
         dataSource.setPassword("12345678");
          

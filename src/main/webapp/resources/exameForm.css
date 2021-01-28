@@ -8,7 +8,7 @@ body {
   background-color: white;
   font-family: Arial;
   font-size: 16px;
-  padding: 5%;
+  padding: 25px 5% 0px 5%;
 }
 
 .flexDiv {
@@ -59,7 +59,8 @@ body {
 
 h1 {
   padding: 60px;
-  margin: 2%;
+  margin: auto;
+  margin-bottom: 10px;
   text-align: center;
   background: #DDDDDD;
   color: black;
@@ -96,7 +97,8 @@ button {
 }
 
 table {
-  width: 50%;
+  width: 100%;
+  margin: auto;
 }
 
 th {
